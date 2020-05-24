@@ -1,0 +1,8 @@
+Ciaran Fereday 
+10393236
+Sed is a stream editor which reads text line by line and uses commands to do basic text changes and transformations. It reads a script line by line to a buffer which implements the outlined commands on the text, when it reads the next line it starts a new cycle and again runs the changes outlined by the sed commands to the text. In the script a text file is read which contains the dimensions of rectangle, each detail is labelled with its heading to make it easier to read. Some of the commands and there uses are as follows. 
+Cat is used to read and load the file
+s  is used to substitute a regex with the specified text. It replaces the matched string with the inputted replacement. This is used to give each detaail of the rectangle its required label instead of having it only at the top of the text. 
+-e is used to read multiple commands at once and use them as output
+sed ‘1d’   is used to delete the header line which is formatted incorrectly after the changes.
+>rectangle_f.txt is   used to output the changes to a new text file called rectangle_f.txt
